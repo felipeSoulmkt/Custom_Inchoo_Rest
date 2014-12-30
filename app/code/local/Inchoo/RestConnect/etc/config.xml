@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Inbusiness_Allservice extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       Inbusiness
+ * @package        Inbusiness_Allservice
+ * @copyright      Copyright (c) 2014
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<config>
+    <modules>
+        <Inchoo_RestConnect>
+            <version>1.0.0</version>
+        </Inchoo_RestConnect>
+    </modules>
+    <global>
+        <blocks>
+            <Inchoo_RestConnect>
+                <class>Inchoo_RestConnect_Block</class>
+            </Inchoo_RestConnect>
+        </blocks>
+        <helpers>
+            <Inchoo_RestConnect>
+                <class>Inchoo_RestConnect_Helper</class>
+            </Inchoo_RestConnect>
+        </helpers>
+        <models>
+            <Inchoo_RestConnect>
+                <class>Inchoo_RestConnect_Model</class>
+            </Inchoo_RestConnect>
+        </models>
+        
+    </global>
+  <frontend>
+        <routers>
+            <Inchoo_RestConnect>
+                <use>standard</use>
+                <args>
+                    <module>Inchoo_RestConnect</module>
+                    <frontName>restconnect</frontName>
+                </args>
+            </Inchoo_RestConnect>
+        </routers>  
+    </frontend> 
+   	
+</config>
